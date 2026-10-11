@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.s3_zadanie1_2.HelloController">
+   <children>
+      <HBox layoutX="21.0" layoutY="31.0" spacing="20.0">
+         <children>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#onStart" text="start" />
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#onLeft" text="&lt;" />
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#onRight" text="&gt;" />
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#onStop" text="stop" />
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#onAutomatic" text="Automatic" />
+         </children>
+      </HBox>
+   </children>
+</Pane>
