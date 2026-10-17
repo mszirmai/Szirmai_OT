@@ -1,0 +1,23 @@
+package com.example.s4_zadanie1;
+
+import javafx.scene.paint.Color;
+
+public class MySquare extends GeometricShape{
+
+    public MySquare(float x, float y, Color f){
+        super(x,y,f);
+    }
+
+    protected void vykresli(){
+        gc.setFill(farba);
+        gc.fillRect(0,0,30,30);
+    }
+
+    protected void pohyb(){
+        if(smer==1) setLayoutY(this.getLayoutY()+5);
+        else if(smer==0) setLayoutY(this.getLayoutY()-5);
+        if(this.getLayoutY()>360){
+            smer=0;
+        } else if(this.getLayoutY()<10) smer=1;
+    }
+}
