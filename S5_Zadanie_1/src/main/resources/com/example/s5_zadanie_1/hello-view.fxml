@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.s5_zadanie_1.HelloController">
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="395.0" prefWidth="134.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textfield1" />
+            <Button mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="150.0" text="Add" />
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="142.0" text="Remove" />
+            <Button mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="149.0" text="Update" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <ListView fx:id="list" prefHeight="200.0" prefWidth="426.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
